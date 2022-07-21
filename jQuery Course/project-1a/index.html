@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My Kittos</title>
+        <!-- CSS -->
+        <link href="styles.css" rel="stylesheet">
+        <link href="lightbox.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <span>—  Meet my kitties  —</span>
+                <h1>TacocaT and Dr Awkward</h1>
+            </header>
+            <!-- Thumbnail Images -->
+            <a href="assets/images/image1.jpg" data-lightbox="cat" data-title="TacocaT">
+              <img src="assets/thumbnails/image1.jpg" alt="TacocaT"/>
+            </a>
+
+            <a href="assets/images/image2.jpg" data-lightbox="cat" data-title="Dr Awkward">
+              <img src="assets/thumbnails/image2.jpg" alt="Dr Awkward Stand"/>
+            </a>
+
+            <a href="assets/images/image3.jpg" data-lightbox="cat" data-title="TacocaT">
+              <img src="assets/thumbnails/image3.jpg" alt="TacocaT"/>
+            </a>
+<br/>
+            <a href="assets/images/image4.jpg" data-lightbox="cat" data-title="Dr Awkward">
+              <img src="assets/thumbnails/image4.jpg" alt="Dr Awkward"/>
+            </a>
+
+            <a href="assets/images/image5.jpg" data-lightbox="cat" data-title="TacocaT">
+              <img src="assets/thumbnails/image5.jpg" alt="TacocaT"/>
+            </a>
+
+            <a href="assets/images/image6.jpg" data-lightbox="cat" data-title="Dr Awkward">
+              <img src="assets/thumbnails/image6.jpg" alt="Dr Awkward"/>
+            </a>
+        </div>
+        <!-- JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="lightbox.js"></script>
+        <script>
+          lightbox.option({
+            'positionFromTop': 100,
+            'wrapAround': true
+          })
+        </script>
+    </body>
+</html>
