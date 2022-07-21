@@ -1,0 +1,43 @@
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.hero img {
+  width: 100%;
+  border-radius: 0;
+}
+
+
+aside.right, aside.left {
+  text-align: center;
+  float: none;
+}
+
+aside.right2 {
+  float: none;
+  text-align: center;
+  background-color: #fff;
+  width: 100%;
+  margin-top: 0px;
+  padding-bottom: 11px;
+}
+
+
+footer {
+  margin-top: -10px;
+}
+
+p {
+  text-align: center;
+}
+
+h6 {
+  text-align: center;
+  float: none;
+}
+
+address {
+  text-align: center;
+}

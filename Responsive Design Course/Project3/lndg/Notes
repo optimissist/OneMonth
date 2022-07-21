@@ -1,0 +1,42 @@
+padding-bottom: 14px;
+border-bottom: 1px solid #C5D0DD;
+margin-bottom: 24px;
+
+Introduction to the basic
+components of a...
+
+Media
+Query
+
+For example
+
+@media only screen and (min-width: 680px) {insert css here}
+
+The first thing you need to do is tell your stylesheet that you're writing a media query. You do this by starting your line with:
+
+@media
+
+After you've started your media rule, you need to define where you want it to apply. Except when using the logical operators "not" or "only", the media type is optional and "all" is implied. Options for media types are:
+
+all
+print (intended to be viewed in print preview mode)
+screen
+speech (intended for speech synthesizers)
+
+Last you will use the logical operators "not", "and", or "only" to help define the features or characteristics of the environment you are looking to target. You can target as many or as few features as you want. Features include (but are not limited to) width, height, orientation (of viewport), and resolution.
+
+So
+
+@media only screen and (min-width: 680px)
+
+targets screens that have a minimum width of 680px.
+
+@media and (min-width: 681px) and (max-width: 1080px)
+
+targets all types with displays within a range of 681px to 1080px.
+
+And so on and so forth to whatever you need. You can use as many media queries in your stylesheets as you have breakpoints and they can be as simple or complicated as you need.
+
+Thank you for your time. Good luck!
+
+This video was made for you by starwarsintrocreator.kassellabes.io and written by me.
