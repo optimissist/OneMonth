@@ -1,0 +1,44 @@
+1Q. If you wanted to see the results of randomNumber you could print that out by adding the following code after line 38:
+
+document.write(randomNumber);
+
+When you refresh what happens?
+
+1A. A random number between one and five shows up immediately after the question mark.
+
+2Q. Did you notice that sometimes a 0 pops up? What's that about!? Do a quick Google Search and you'll learn that arrays always start with 0 (not 1). I just gave you that answer. Send it in as your answer and impress the hell out of your One Month Mentor.
+
+2A. Arrays start at 0
+
+3Q. What happens when you replace bars[randomNumber] with bars[3]?
+
+3A. One Month (technically item 4 in the array) displays as the bars variable.
+
+4Q. What does bars.length do? Print it out to see.
+
+4A. Returns the number of items in the Bars array
+
+5Q. What does Math.floor do? Remove it to find out.
+
+5A. Removing Math.floor caused the variables to become undefined. Math.floor returns the largest integer less than or equal to a defined whole number. Math.random returns a random number between 0 and 1. Math.floor translates that number to a whole number so it can be read in the array.
+
+6Q. What is Math? No that's not a metaphysical question. Seriously, what is that word Math doing all around this code!? I challenge you to google it and come up with a good answer. Go deeper and print out some other Math methods. You can do this. And it all starts with one 6 letter word: GOOGLE.
+
+6A. Math is a built-in object that is built to give structure to mathematics in javascript. It has properties and methods for math constants and functions, that serve as static references you can call on in your code.
+
+7Q. Add one friend to the list of friends.
+
+7A. Okay
+
+Bonus challenge: Remove 3 friends from the list of friends. Why does this give you an "undefined" result when you occasionally refresh? Can you fix the problem?
+
+Bonus answer: Removing items from the array gives you an "undefined" result occasionally because the calculations for .math are based on Bars. So when the number of bars is greater than the number of friends, friends will occasionally return an undefined result because the array numbers are uneven and there aren't friends in same the array number as bars.
+
+To fix the problem, I added an additional variable that calculated a random number within the Friends array and used that to pull a number from the friends array.
+
+
+var randomNumber = Math.floor(Math.random()*bars.length);
+var randomNumberFriends = Math.floor(Math.random()*friends.length);
+
+var barname = bars[randomNumber];
+var friendname = friends[randomNumberFriends];

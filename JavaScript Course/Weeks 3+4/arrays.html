@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>More with Arrays</title>
+
+	<style type="text/css">
+
+		body {
+			background: #87CEFA;
+		}
+
+	</style>
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+		// PUSH - adds new elements to an array
+				var animals = ['pigs', 'goats', 'sheep'];
+				var count = animals.push('cows');
+				console.log(count);
+				// expected output: 4
+				console.log(animals);
+				// expected output: Array ["pigs", "goats", "sheep", "cows"]
+				animals.push('chickens', 'cats', 'dogs');
+				console.log(animals);
+				// expected output: Array ["pigs", "goats", "sheep", "cows", "chickens", "cats", "dogs"]
+
+		//POP -- removes the last element of an array
+				const plants = ['broccoli', 'cauliflower', 'cabbage', 'kale', 'tomato'];
+				console.log(plants.pop());
+				// expected output: "tomato"
+				console.log(plants);
+				// expected output: Array ["broccoli", "cauliflower", "cabbage", "kale"]
+				plants.pop();
+				console.log(plants);
+				// expected output: Array ["broccoli", "cauliflower", "cabbage"]
+
+		//SHIFT - removes the first element of an array.
+
+				var array1 = [1, 2, 3];
+				var firstElement = array1.shift();
+
+				console.log(array1);
+				// expected output: Array [2, 3]
+
+				console.log(firstElement);
+				// expected output: 1
+
+
+		//REVERSE - reverse the array
+				var array2 = ['one', 'two', 'three'];
+				console.log('array2:', array2);
+				// expected output: "array2:" Array ["one", "two", "three"]
+
+				var reversed = array2.reverse();
+				console.log('reversed:', reversed);
+				// expected output: "reversed:" Array ["three", "two", "one"]
+
+				// Careful: reverse is destructive -- it changes the original array.
+				console.log('array2:', array2);
+				// expected output: "array1:" Array ["three", "two", "one"]
+
+</script>
+</body>
+</html>

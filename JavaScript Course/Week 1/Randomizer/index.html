@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Happy Hour App - How about a drink!?">
+		<meta name="keywords" content="happy hour, drink, beers">
+
+		<title>Happy Hour</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<script>
+
+			// Our List of Fish
+			var fish = [
+				'Sea Horse',
+				'Tiger Shark',
+				'Orca Whale',
+				'Salmon',
+				'Anglerfish',
+				'Octopus'
+			];
+
+			// Our List of Food
+			var food = [
+				'Butter',
+				'Ketchup',
+				'Mustard',
+				'Chili Sauce',
+				'Mayo',
+				'Ranch'
+			];
+
+			// Our List of Positive images
+
+			var kateImg = [
+				'images/tll1.jpg',
+				'images/tll2.jpg',
+				'images/tll3.jpg',
+				'images/tll4.jpg',
+				'images/tll5.jpg',
+				'images/tll6.jpg'
+			]
+
+			var randomNumber = Math.floor(Math.random()*fish.length)
+
+			document.write("<h1>What should you do tonight?</h1>")
+
+			document.write("How about you and your pet " + fish[randomNumber] + " eat some " + food[randomNumber] +  "? Have fun! <br/>");
+
+			document.write("<img src=\"" + kateImg[randomNumber] +"\">");
+
+		</script>
+	</head>
+	<body>
+		<!-- PAGE CONTENT WILL BE PRINTED HERE -->
+	</body>
+</html>

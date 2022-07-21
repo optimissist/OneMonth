@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>Tabletop</title>
+
+	<style type="text/css">
+
+		body {
+			background: pink;
+      padding: 20px;
+		}
+
+		h1 {
+			color: grey;
+			text-align: center;
+		}
+  </style>
+  <script src="https://script.sheetsu.com/"></script>
+  </head>
+<body>
+<h1> This info is being pulled from a spreadsheet!</h1>
+  <ul id="list"></ul>
+
+  <script>
+    // API returns array of objects
+    // Iterate over them and add each element as a list element
+    function successFunc(data) {
+      console.log(data);
+      data.forEach(function(data) {
+        document.getElementById("list").innerHTML += "<li>" + data.id + " | " + data.id + " | " + data.name + "</li>";
+      });
+    }
+
+    function errorFunc(e) {
+      console.log(e);
+    }
+
+    Sheetsu.read("https://sheetsu.com/apis/v1.0/89b1f33e124c/", {}).then(successFunc, errorFunc);
+  </script>
+</body>
